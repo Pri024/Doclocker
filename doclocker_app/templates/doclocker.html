@@ -1,0 +1,113 @@
+
+    {% extends 'base.html' %}
+
+
+    {% block title %}
+        <title> Doclocker manager - Edocs</title>
+    {% endblock title %}
+
+     {% load static %}
+
+    {% block content %}
+            <div class="container" style="text-align: center; padding: 20px">
+                <h1>{{ doclocker_text }}</h1>
+            </div>
+    {% endblock content %}
+
+    {% block slider %}
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="padding: 30px">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src= {% static "/images/digi-locker-2.gif" %} class="d-block w-100" alt="digi-locker-o" width="1200" height="500">
+                </div>
+                <div class="carousel-item">
+                         <img src= {% static "/images/digi-locker-1.jpg" %} class="d-block w-100" alt="digi-locker-1" width="1200" height="500">
+                </div>
+                <div class="carousel-item">
+                        <img src= {% static "/images/digi-locker-3.png" %} class="d-block w-100" alt="digi-locker-3" width="1200" height="500">
+                </div>
+                     </div>
+                        </div>
+    {% endblock slider %}
+
+    {% block howwork %}
+
+    <div class="col-md-12 col-sm-12 hidden-xs panelsrow text-center " style="padding-bottom: 60px; padding-top: 60px; width: 100%;">
+                <div class="container" style="width=1000px;">
+
+                    <p class="section-header"   style="font-size: 30px; font-weight: 650;">
+                        How it Works?
+                    </p>
+
+                    <div>
+                        <div class="row">
+
+
+                    <div class="col-md-2 col-sm-2 text-center" style="float: left; margin-left: 80px;">
+
+                    <div class="col-md-2 col-sm-2  text-center">
+                        <div class="profile-circle" style="background-color: rgba(0,0,0,0);">
+                               <img src="{% static "/images/signup.png" %}" class="icon_border" style="padding: .4em .2em; width="150" height="150"">
+                            </div>
+                    </div>
+
+
+                        <p> Register </p>
+                    </div>
+
+
+                    <div class="col-md-2 col-sm-2  text-center" style="float: left; margin-left: 80px;">
+                        <div class="profile-circle" style="background-color: rgba(0,0,0,0);">
+
+                            <img src="{% static "/images/login.png" %}" class="icon_border" style="padding: .4em .2em;" width="150" height="150">
+                        </div>
+
+                        <p>Login</p>
+                    </div>
+
+
+                    <div class="col-md-2 col-sm-2 text-center" style="float: right; margin-left: 80px;">
+                        <div class="profile-circle" style="background-color: rgba(0,0,0,0);">
+
+                            <img src="{% static "/images/doc.png" %}" class="icon_border" style="padding: .4em .2em; width="150" height="150"">
+                        </div>
+
+                        <p>Get documents</p>
+                    </div>
+
+
+                    <div class="col-md-2 col-sm-2  text-center" style="float: right; margin-left: 80px;" >
+                        <div class="profile-circle" style="background-color: rgba(0,0,0,0);">
+
+                            <img src="{% static "/images/verified.png" %}" class="icon_border" style="padding: .4em .2em; width="150" height="150"">
+                        </div>
+
+                        <p>Documents verified </p>
+                    </div>
+
+
+                    <div class="col-md-1 col-sm-1 col-xs-1" ></div>
+                </div>
+                </div>
+    </div>
+    </div>
+
+    {% endblock howwork %}
+
+
+    {% block subform %}
+        <div class="jumbotron text-center">
+  <h1>Doclocker - A digital Locker</h1>
+  <p>Want to know more? Join our mailing list!</p>
+  <form class="form-inline justify-content-center"  method="post" enctype="text/plain">
+    <div class="input-group">
+
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+          <button type="button" class="btn btn-danger"> Click here</button>
+      </div>
+    </div>
+  </form>
+</div>
+    {% endblock subform %}
+

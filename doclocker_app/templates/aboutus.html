@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+    {% block title %}
+    <title> Aboutus  - Edocs</title>
+    {% endblock title %}
+
+    {% block content %}
+            <div class="container" style="text-align: center; padding: 20px">
+                <h1>{{ aboutus_text }}</h1>
+            </div>
+
+<div class="container">
+    <div class="panel-group" style="margin-bottom: 20px; ">
+        <p class="section-header" style="margin: 0 0 10px , font-size: 3rem!important;"><h3>About DocLocker</h3></p>
+
+            <p style="margin-top: 30px;">Targeted at the idea of paperless , DocLocker is a platform for issuance and verification of documents &amp; certificates in a digital way, thus eliminating the use of physical documents. Indian citizens who sign up for a DocLocker account get a dedicated storage/space. Organizations that are registered with Digital Locker can push electronic copies of documents and certificates (e.g. driving license, Voter ID, School certificates) directly into citizens lockers. Citizens can also upload scanned copies of their legacy documents in their accounts. </p>
+                <div class="blue" style="margin-bottom: 4px; margin-top: 60px;">The platform/or webapp has the following benefits:</div>
+                    <ol style="padding:50px;">
+                        <li>Citizens can access their digital documents anytime, anywhere and share it online. This is convenient and time saving.</li>
+                        <li>It reduces the administrative overhead of Government departments by minimizing the use of paper.</li>
+                        <li>Digital Document Locker makes it easier to validate the authenticity of documents as they are issued directly by the registered issuers.</li>
+                    </ol>
+    </div>
+</div>
+    {% endblock content %}
+

@@ -1,0 +1,17 @@
+{% extends 'navbase.html' %}
+
+{% block title %}
+    <title> Homepage- DOCLOCKER</title>
+{% endblock title %}
+
+
+{% block content %}
+{% if user.is_authenticated %}
+<h2 style="padding:40px;">Hiii   {{ user.username }}!  Welcome to Doclocker you can store your document here !!!</h2>
+
+{% else %}
+  <p style="padding:40px;">You are not logged in</p>
+  <a href="{% url 'login' %}">login</a>
+{% endif %}
+{% endblock %}
+
